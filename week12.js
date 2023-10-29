@@ -255,10 +255,11 @@ const resultNineteen = document.querySelector('#resultNineteen');
 
 const makeNineteen = () => {
 	const str = 'Hello, world!';
-	//Ваш код
+	const newStr = str.substr(7, 6);
+	resultNineteen.textContent = newStr;
 };
 
-//Добавьте слушатель события
+buttonNineteen.addEventListener('click', makeNineteen);
 
 //Задание 20
 //Найдите максимальное число из чисел 10, 25, 5, 30, 15. Добавьте слушатель события на кнопку "Задание 20" и выведите результат на экран.
@@ -268,10 +269,10 @@ const buttonTwenty = document.querySelector('.b-20');
 const resultTwenty = document.querySelector('#resultTwenty');
 
 const makeTwenty = () => {
-	//Ваш код
+	resultTwenty.textContent = Math.max(10, 25, 5, 30, 15);
 };
 
-//Добавьте слушатель события
+buttonTwenty.addEventListener('click', makeTwenty);
 
 // Задание 21
 // Выведите на экран случайное целое число от 1 до 10. Добавьте слушатель события на кнопку "Задание 21" и выведите результат на экран.
@@ -280,10 +281,10 @@ const buttonTwentyOne = document.querySelector('.b-21');
 const resultTwentyOne = document.querySelector('#resultTwentyOne');
 
 const makeTwentyOne = () => {
-	//Ваш код
+	resultTwentyOne.textContent = Math.round(Math.random() * 10);
 };
 
-//Добавьте слушатель события
+buttonTwentyOne.addEventListener('click', makeTwentyOne);
 
 //Задание 22
 //Найдите минимальное число из чисел 10, 25, 5, 30, 15. Добавьте слушатель события на кнопку "Задание 21" и выведите результат на экран.
@@ -293,10 +294,10 @@ const buttonTwentyTwo = document.querySelector('.b-22');
 const resultTwentyTwo = document.querySelector('#resultTwentyTwo');
 
 const makeTwentyTwo = () => {
-	//Ваш код
+	resultTwentyTwo.textContent = Math.min(10, 25, 5, 30, 15);
 };
 
-//Добавьте слушатель события
+buttonTwentyTwo.addEventListener('click', makeTwentyTwo);
 
 //Задание 23
 //Выведите на экран результат возведения числа 2 в степень 5. Добавьте слушатель события на кнопку "Задание 23" и выведите результат на экран.
@@ -306,10 +307,10 @@ const buttonTwentyThree = document.querySelector('.b-23');
 const resultTwentyThree = document.querySelector('#resultTwentyThree');
 
 const makeTwentyThree = () => {
-	//Ваш код
+	resultTwentyThree.textContent = Math.pow(2, 5);
 };
 
-//Добавьте слушатель события
+buttonTwentyThree.addEventListener('click', makeTwentyThree);
 
 //Задание 24
 //Выведите на экран наименьшее число из чисел 7, 3, 11, 5, 9. Добавьте слушатель события на кнопку "Задание 24" и выведите результат на экран.
@@ -318,10 +319,10 @@ const buttonTwentyFour = document.querySelector('.b-24');
 const resultTwentyFour = document.querySelector('#resultTwentyFour');
 
 const makeTwentyFour = () => {
-	//Ваш код
+	resultTwentyFour.textContent = Math.min(7, 3, 11, 5, 9);
 };
 
-//Добавьте слушатель события
+buttonTwentyFour.addEventListener('click', makeTwentyFour);
 
 //Задание 25
 //Выведите на экран наибольшее число из чисел 7, 3, 11, 5, 9. Добавьте слушатель события на кнопку "Задание 25" и выведите результат на экран.
@@ -330,10 +331,10 @@ const buttonTwentyFive = document.querySelector('.b-25');
 const resultTwentyFive = document.querySelector('#resultTwentyFive');
 
 const makeTwentyFive = () => {
-	//Ваш код
+	resultTwentyFive.textContent = Math.max(7, 3, 11, 5, 9);
 };
 
-//Добавьте слушатель события
+buttonTwentyFive.addEventListener('click', makeTwentyFive);
 
 //Задание 26
 //Выведите на экран случайное число от 0 до 1 с точностью до 4 знаков после запятой. Добавьте слушатель события на кнопку "Задание 26" и выведите результат на экран.
@@ -343,10 +344,10 @@ const buttonTwentySix = document.querySelector('.b-26');
 const resultTwentySix = document.querySelector('#resultTwentySix');
 
 const makeTwentySix = () => {
-	//Ваш код
+	resultTwentySix.textContent = (Math.random()).toFixed(4);
 };
 
-//Добавьте слушатель события
+buttonTwentySix.addEventListener('click', makeTwentySix);
 
 //Задание 27
 //Выведите на экран случайное целое число от 50 до 100. Добавьте слушатель события на кнопку "Задание 27" и выведите результат на экран.
@@ -355,10 +356,11 @@ const buttonTwentySeven = document.querySelector('.b-27');
 const resultTwentySeven = document.querySelector('#resultTwentySeven');
 
 const makeTwentySeven = () => {
-	//Ваш код
+	const randomNumber = Math.floor(Math.random() * (100 - 5 + 1)) + 50;
+	resultTwentySeven.textContent = randomNumber;
 };
 
-//Добавьте слушатель события
+buttonTwentySeven.addEventListener('click', makeTwentySeven);
 
 //Задание 28
 //Округлите число 4.47 в большую сторону с помощью метода Math.ceil(). Добавьте слушатель события на кнопку "Задание 28" и выведите результат на экран.
@@ -367,10 +369,10 @@ const buttonTwentyEight = document.querySelector('.b-28');
 const resultTwentyEight = document.querySelector('#resultTwentyEight');
 
 const makeTwentyEight = () => {
-	//Ваш код
+	resultTwentyEight.textContent = Math.ceil(4.47);
 };
 
-//Добавьте слушатель события
+buttonTwentyEight.addEventListener('click', makeTwentyEight);
 
 //Задание 29
 //Получите квадратный корень из числа 16 с помощью метода Math.sqrt(). Добавьте слушатель события на кнопку "Задание 29" и выведите результат на экран.
@@ -379,10 +381,10 @@ const buttonTwentyNine = document.querySelector('.b-29');
 const resultTwentyNine = document.querySelector('#resultTwentyNine');
 
 const makeTwentyNine = () => {
-	//Ваш код
+	resultTwentyNine.textContent = Math.sqrt(16);
 };
 
-//Добавьте слушатель события
+buttonTwentyNine.addEventListener('click', makeTwentyNine);
 
 //Задание 30
 //Получите квадратный корень из числа 25 с помощью метода Math.sqrt(). Добавьте слушатель события на кнопку "Задание 30" и выведите результат на экран.
@@ -391,7 +393,7 @@ const buttonThirty = document.querySelector('.b-30');
 const resultThirty = document.querySelector('#resultThirty');
 
 const makeThirty = () => {
-	//Ваш код
+	resultThirty.textContent = Math.sqrt(25);
 };
 
-//Добавьте слушатель события
+buttonThirty.addEventListener('click', makeThirty);
